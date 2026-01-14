@@ -1,0 +1,31 @@
+{
+  "name": "@repo/database",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./convex/_generated/api.js",
+  "types": "./convex/_generated/api.d.ts",
+  "exports": {
+    ".": {
+      "types": "./convex/_generated/api.d.ts",
+      "default": "./convex/_generated/api.js"
+    },
+    "./react": {
+      "types": "./convex/_generated/react.d.ts",
+      "default": "./convex/_generated/react.js"
+    },
+    "./env": "./env.ts"
+  },
+  "scripts": {
+    "dev": "echo '\n📦 Database (Convex) - Run separately:\n   cd packages/database && bunx convex dev\n'",
+    "convex": "convex dev",
+    "deploy": "convex deploy",
+    "type-check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "convex": "^1.31.4"
+  },
+  "devDependencies": {
+    "@repo/typescript-config": "workspace:*",
+    "typescript": "^5.0.0"
+  }
+}

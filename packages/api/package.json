@@ -1,0 +1,30 @@
+{
+  "name": "@repo/api",
+  "version": "0.0.0",
+  "private": true,
+  "exports": {
+    "./env": "./env.ts"
+  },
+  "scripts": {
+    "postinstall": "motia install",
+    "dev": "motia dev",
+    "generate-types": "motia generate-types",
+    "build": "motia build",
+    "type-check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@motiadev/core": "^0.9.6-beta.152",
+    "@motiadev/plugin-endpoint": "^0.9.6-beta.152",
+    "@motiadev/plugin-logs": "^0.9.6-beta.152",
+    "@motiadev/plugin-observability": "^0.9.6-beta.152",
+    "@motiadev/plugin-states": "^0.9.6-beta.152",
+    "motia": "^0.9.6-beta.152",
+    "svix": "^1.0.0",
+    "zod": "^3.24.4"
+  },
+  "devDependencies": {
+    "@repo/typescript-config": "workspace:*",
+    "convex": "^1.31.4",
+    "typescript": "^5.7.3"
+  }
+}

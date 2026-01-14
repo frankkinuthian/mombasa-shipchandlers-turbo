@@ -1,0 +1,35 @@
+[
+  {
+    "id": "clerk-integration",
+    "config": {
+      "steps/webhooks/clerk-webhook.step.ts": {
+        "x": 0,
+        "y": 339
+      },
+      "steps/events/clerk-user/user-deleted.step.ts": {
+        "x": 618,
+        "y": -253
+      },
+      "steps/events/clerk-user/user-deleted-handler.step.ts": {
+        "x": 774,
+        "y": -38
+      },
+      "steps/events/clerk-user/user-created.step.ts": {
+        "x": 260,
+        "y": -514
+      },
+      "steps/events/clerk-session/session-removed.step.ts": {
+        "x": 628,
+        "y": 868
+      },
+      "steps/events/clerk-session/session-ended.step.ts": {
+        "x": 720,
+        "y": 524
+      },
+      "steps/events/clerk-session/session-created.step.ts": {
+        "x": 780,
+        "y": 302
+      }
+    }
+  }
+]
