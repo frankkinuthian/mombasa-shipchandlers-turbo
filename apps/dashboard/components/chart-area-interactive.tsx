@@ -197,7 +197,7 @@ export function ChartAreaInteractive() {
               size="sm"
               aria-label="Select a value"
             >
-              <SelectValue placeholder="Last 3 months" />
+              <SelectValue />
             </SelectTrigger>
             <SelectContent className="rounded-xl">
               <SelectItem value="90d" className="rounded-lg">
