@@ -6,11 +6,11 @@
         "x": 0,
         "y": 339
       },
-      "steps/events/clerk-user/user-deleted.step.ts": {
+      "steps/events/clerk-user/user-updated.step.ts": {
         "x": 618,
         "y": -253
       },
-      "steps/events/clerk-user/user-deleted-handler.step.ts": {
+      "steps/events/clerk-user/user-deleted.step.ts": {
         "x": 774,
         "y": -38
       },

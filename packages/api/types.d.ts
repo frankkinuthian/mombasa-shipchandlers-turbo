@@ -12,10 +12,10 @@ declare module 'motia' {
   }
 
   interface Handlers {
-    'ClerkWebhook': ApiRouteHandler<Record<string, unknown>, unknown, { topic: 'clerk.user.created'; data: { id: string; email_addresses: Array<{ email_address: string }>; first_name: unknown; last_name: unknown } } | { topic: 'clerk.user.updated'; data: { id: string; email_addresses?: Array<{ email_address: string }>; first_name: unknown; last_name: unknown } } | { topic: 'clerk.user.deleted'; data: { id: string } } | { topic: 'clerk.session.created'; data: { id: string; user_id: string } } | { topic: 'clerk.session.ended'; data: { id: string } } | { topic: 'clerk.session.removed'; data: { id: string } }>
-    'ClerkUserUpdated': EventHandler<{ id: string; email_addresses?: Array<{ email_address: string }>; first_name: unknown; last_name: unknown }, never>
+    'ClerkWebhook': ApiRouteHandler<Record<string, unknown>, unknown, { topic: 'clerk.user.created'; data: { id: string; email_addresses: Array<{ email_address: string }>; first_name?: unknown; last_name?: unknown } } | { topic: 'clerk.user.updated'; data: { id: string; email_addresses?: Array<{ email_address: string }>; first_name?: unknown; last_name?: unknown } } | { topic: 'clerk.user.deleted'; data: { id: string } } | { topic: 'clerk.session.created'; data: { id: string; user_id: string } } | { topic: 'clerk.session.ended'; data: { id: string } } | { topic: 'clerk.session.removed'; data: { id: string } }>
+    'ClerkUserUpdated': EventHandler<{ id: string; email_addresses?: Array<{ email_address: string }>; first_name?: unknown; last_name?: unknown }, never>
     'ClerkUserDeleted': EventHandler<{ id: string }, never>
-    'ClerkUserCreated': EventHandler<{ id: string; email_addresses: Array<{ email_address: string }>; first_name: unknown; last_name: unknown }, never>
+    'ClerkUserCreated': EventHandler<{ id: string; email_addresses: Array<{ email_address: string }>; first_name?: unknown; last_name?: unknown }, never>
     'ClerkSessionRemoved': EventHandler<{ id: string }, never>
     'ClerkSessionEnded': EventHandler<{ id: string }, never>
     'ClerkSessionCreated': EventHandler<{ id: string; user_id: string }, never>

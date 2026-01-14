@@ -1648,5 +1648,294 @@
         }
       }
     ]
+  },
+  "3FM37-3035749:10d6c4cf-bd0a-410c-8d47-9f6b0fde1312": {
+    "id": "10d6c4cf-bd0a-410c-8d47-9f6b0fde1312",
+    "name": "ClerkWebhook",
+    "parentTraceId": "3FM37-3035749",
+    "status": "completed",
+    "startTime": 1768363035751,
+    "endTime": 1768363036193,
+    "entryPoint": {
+      "type": "api",
+      "stepName": "ClerkWebhook"
+    },
+    "events": [
+      {
+        "type": "log",
+        "timestamp": 1768363036160,
+        "level": "info",
+        "message": "Webhook secret check",
+        "metadata": {
+          "traceId": "3FM37-3035749",
+          "flows": [
+            "clerk-integration"
+          ],
+          "step": "ClerkWebhook",
+          "hasSecret": true,
+          "secretLength": 38,
+          "level": "info",
+          "time": 1768363036122,
+          "msg": "Webhook secret check"
+        }
+      },
+      {
+        "type": "log",
+        "timestamp": 1768363036160,
+        "level": "info",
+        "message": "Clerk webhook verified",
+        "metadata": {
+          "traceId": "3FM37-3035749",
+          "flows": [
+            "clerk-integration"
+          ],
+          "step": "ClerkWebhook",
+          "type": "session.created",
+          "id": "sess_38ES34fzfpBA1O16u9CGxoJ0LN4",
+          "level": "info",
+          "time": 1768363036123,
+          "msg": "Clerk webhook verified"
+        }
+      },
+      {
+        "type": "log",
+        "timestamp": 1768363036160,
+        "level": "info",
+        "message": "Processing Clerk webhook",
+        "metadata": {
+          "traceId": "3FM37-3035749",
+          "flows": [
+            "clerk-integration"
+          ],
+          "step": "ClerkWebhook",
+          "type": "session.created",
+          "id": "sess_38ES34fzfpBA1O16u9CGxoJ0LN4",
+          "level": "info",
+          "time": 1768363036123,
+          "msg": "Processing Clerk webhook"
+        }
+      },
+      {
+        "type": "emit",
+        "timestamp": 1768363036160,
+        "topic": "clerk.session.created",
+        "success": true,
+        "data": {
+          "abandon_at": 1770955034988,
+          "actor": null,
+          "client_id": "client_38ER8yu8xWINiM0t0OO00dDcsFr",
+          "created_at": 1768363034988,
+          "expire_at": 1768967834988,
+          "id": "sess_38ES34fzfpBA1O16u9CGxoJ0LN4",
+          "last_active_at": 1768363034988,
+          "object": "session",
+          "status": "active",
+          "updated_at": 1768363035050,
+          "user": {
+            "backup_code_enabled": false,
+            "banned": false,
+            "bypass_client_trust": false,
+            "create_organization_enabled": true,
+            "created_at": 1768352287804,
+            "delete_self_enabled": true,
+            "email_addresses": [
+              {
+                "created_at": 1768352287788,
+                "email_address": "f.kinuthia01@gmail.com",
+                "id": "idn_38E6GZ0BSTBeDFe7HoOHp3XFefN",
+                "linked_to": [
+                  {
+                    "id": "idn_38E6GWCX9vQXqdtfZA0zBeyDmXm",
+                    "type": "oauth_google"
+                  }
+                ],
+                "matches_sso_connection": false,
+                "object": "email_address",
+                "reserved": false,
+                "updated_at": 1768352287813,
+                "verification": {
+                  "attempts": null,
+                  "expire_at": null,
+                  "object": "verification_from_oauth",
+                  "status": "verified",
+                  "strategy": "from_oauth_google"
+                }
+              }
+            ],
+            "enterprise_accounts": [],
+            "external_accounts": [
+              {
+                "approved_scopes": "email https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile openid profile",
+                "avatar_url": "https://lh3.googleusercontent.com/a/ACg8ocKuUboHHVfNSa3mHyjBZSh2MrRee9TFe_du5Isc2rTyYoBhwro=s1000-c",
+                "created_at": 1768352287783,
+                "email_address": "f.kinuthia01@gmail.com",
+                "external_account_id": "eac_38E6GbGoTDmxpuY4AH1Ow6TorSt",
+                "family_name": "Kinuthia",
+                "first_name": "Frank",
+                "given_name": "Frank",
+                "google_id": "112717134731591773422",
+                "id": "idn_38E6GWCX9vQXqdtfZA0zBeyDmXm",
+                "identification_id": "idn_38E6GWCX9vQXqdtfZA0zBeyDmXm",
+                "image_url": "https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2xoMy5nb29nbGV1c2VyY29udGVudC5jb20vYS9BQ2c4b2NLdVVib0hIVmZOU2EzbUh5akJaU2gyTXJSZWU5VEZlX2R1NUlzYzJyVHlZb0Jod3JvPXMxMDAwLWMiLCJzIjoiWGpzVTltR2kxUXF3UWtDbjU4MnNVbWJjSDk1dmJxUHE0UzVVc2RmUnJzcyJ9",
+                "label": null,
+                "last_name": "Kinuthia",
+                "object": "google_account",
+                "picture": "https://lh3.googleusercontent.com/a/ACg8ocKuUboHHVfNSa3mHyjBZSh2MrRee9TFe_du5Isc2rTyYoBhwro=s1000-c",
+                "provider": "oauth_google",
+                "provider_user_id": "112717134731591773422",
+                "public_metadata": {},
+                "updated_at": 1768363034960,
+                "username": "",
+                "verification": {
+                  "attempts": null,
+                  "expire_at": 1768352804003,
+                  "object": "verification_oauth",
+                  "status": "verified",
+                  "strategy": "oauth_google"
+                }
+              }
+            ],
+            "external_id": null,
+            "first_name": "Frank",
+            "has_image": true,
+            "id": "user_38E6GW7edpZY4gbjTSU5FeDEhsH",
+            "image_url": "https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2ltYWdlcy5jbGVyay5kZXYvb2F1dGhfZ29vZ2xlL2ltZ18zOEU2R1pDajZybVF3RkVtN0ZIUVlscU9EZDMifQ",
+            "last_active_at": 1768352287804,
+            "last_name": "Kinuthia",
+            "last_sign_in_at": 1768363034988,
+            "legal_accepted_at": null,
+            "locale": null,
+            "locked": false,
+            "lockout_expires_in_seconds": null,
+            "mfa_disabled_at": null,
+            "mfa_enabled_at": null,
+            "object": "user",
+            "passkeys": [],
+            "password_enabled": false,
+            "password_last_updated_at": null,
+            "phone_numbers": [],
+            "primary_email_address_id": "idn_38E6GZ0BSTBeDFe7HoOHp3XFefN",
+            "primary_phone_number_id": null,
+            "primary_web3_wallet_id": null,
+            "private_metadata": {},
+            "profile_image_url": "https://images.clerk.dev/oauth_google/img_38E6GZCj6rmQwFEm7FHQYlqODd3",
+            "public_metadata": {},
+            "requires_password_reset": false,
+            "saml_accounts": [],
+            "totp_enabled": false,
+            "two_factor_enabled": false,
+            "unsafe_metadata": {},
+            "updated_at": 1768363035032,
+            "username": null,
+            "verification_attempts_remaining": 100,
+            "web3_wallets": []
+          },
+          "user_id": "user_38E6GW7edpZY4gbjTSU5FeDEhsH"
+        }
+      }
+    ]
+  },
+  "3FM37-3035749:b93bcb45-8abf-4fd8-b03d-696972f44e40": {
+    "id": "b93bcb45-8abf-4fd8-b03d-696972f44e40",
+    "name": "ClerkSessionCreated",
+    "parentTraceId": "3FM37-3035749",
+    "status": "completed",
+    "startTime": 1768363036163,
+    "endTime": 1768363041211,
+    "entryPoint": {
+      "type": "event",
+      "stepName": "ClerkSessionCreated"
+    },
+    "events": [
+      {
+        "type": "log",
+        "timestamp": 1768363036494,
+        "level": "info",
+        "message": "Session created",
+        "metadata": {
+          "traceId": "3FM37-3035749",
+          "flows": [
+            "clerk-integration"
+          ],
+          "step": "ClerkSessionCreated",
+          "clerkUserId": "user_38E6GW7edpZY4gbjTSU5FeDEhsH",
+          "sessionId": "sess_38ES34fzfpBA1O16u9CGxoJ0LN4",
+          "level": "info",
+          "time": 1768363036493,
+          "msg": "Session created"
+        }
+      },
+      {
+        "type": "log",
+        "timestamp": 1768363041190,
+        "level": "warn",
+        "message": "User still not found after retries - session may be orphaned",
+        "metadata": {
+          "traceId": "3FM37-3035749",
+          "flows": [
+            "clerk-integration"
+          ],
+          "step": "ClerkSessionCreated",
+          "clerkUserId": "user_38E6GW7edpZY4gbjTSU5FeDEhsH",
+          "sessionId": "sess_38ES34fzfpBA1O16u9CGxoJ0LN4",
+          "level": "warn",
+          "time": 1768363041189,
+          "msg": "User still not found after retries - session may be orphaned"
+        }
+      }
+    ]
+  },
+  "Z8GKK-1290407:c6c60fa4-694e-4fcf-940b-c1c9e0617589": {
+    "id": "c6c60fa4-694e-4fcf-940b-c1c9e0617589",
+    "name": "ClerkWebhook",
+    "parentTraceId": "Z8GKK-1290407",
+    "status": "completed",
+    "startTime": 1768381290417,
+    "endTime": 1768382291421,
+    "entryPoint": {
+      "type": "api",
+      "stepName": "ClerkWebhook"
+    },
+    "events": [
+      {
+        "type": "log",
+        "timestamp": 1768382291407,
+        "level": "info",
+        "message": "Webhook secret check",
+        "metadata": {
+          "traceId": "Z8GKK-1290407",
+          "flows": [
+            "clerk-integration"
+          ],
+          "step": "ClerkWebhook",
+          "hasSecret": true,
+          "secretLength": 38,
+          "level": "info",
+          "time": 1768382291400,
+          "msg": "Webhook secret check"
+        }
+      },
+      {
+        "type": "log",
+        "timestamp": 1768382291418,
+        "level": "error",
+        "message": "Webhook verification failed",
+        "metadata": {
+          "traceId": "Z8GKK-1290407",
+          "flows": [
+            "clerk-integration"
+          ],
+          "step": "ClerkWebhook",
+          "error": {
+            "name": "WebhookVerificationError",
+            "message": "Message timestamp too old",
+            "stack": "Error: Message timestamp too old\n    at new ExtendableError (/Users/frank/Desktop/chat/turbo/my-turborepo/node_modules/.bun/standardwebhooks@1.0.0/node_modules/standardwebhooks/src/index.ts:12:18)\n    at new WebhookVerificationError (/Users/frank/Desktop/chat/turbo/my-turborepo/node_modules/.bun/standardwebhooks@1.0.0/node_modules/standardwebhooks/src/index.ts:18:5)\n    at Webhook.verifyTimestamp (/Users/frank/Desktop/chat/turbo/my-turborepo/node_modules/.bun/standardwebhooks@1.0.0/node_modules/standardwebhooks/src/index.ts:121:13)\n    at Webhook.verify (/Users/frank/Desktop/chat/turbo/my-turborepo/node_modules/.bun/standardwebhooks@1.0.0/node_modules/standardwebhooks/src/index.ts:76:28)\n    at Webhook.verify (/Users/frank/Desktop/chat/turbo/my-turborepo/node_modules/.bun/svix@1.84.1/node_modules/svix/src/webhook.ts:45:23)\n    at clerkVerifyMiddleware (/Users/frank/Desktop/chat/turbo/my-turborepo/packages/api/middlewares/clerk-verify.middleware.ts:44:24)\n    at /Users/frank/Desktop/chat/turbo/my-turborepo/node_modules/.bun/@motiadev+core@0.9.6-beta.153-614873+b7e84d4d6dde271f/node_modules/@motiadev/core/dist/src/node/middleware-compose.js:6:92\n    at /Users/frank/Desktop/chat/turbo/my-turborepo/node_modules/.bun/@motiadev+core@0.9.6-beta.153-614873+b7e84d4d6dde271f/node_modules/@motiadev/core/dist/src/node/middleware-compose.js:7:16\n    at runTypescriptModule (/Users/frank/Desktop/chat/turbo/my-turborepo/node_modules/.bun/@motiadev+core@0.9.6-beta.153-614873+b7e84d4d6dde271f/node_modules/@motiadev/core/dist/src/node/node-runner.js:55:30)\n    at Object.<anonymous> (/Users/frank/Desktop/chat/turbo/my-turborepo/node_modules/.bun/@motiadev+core@0.9.6-beta.153-614873+b7e84d4d6dde271f/node_modules/@motiadev/core/dist/src/node/node-runner.js:80:1)"
+          },
+          "level": "error",
+          "time": 1768382291404,
+          "msg": "Webhook verification failed"
+        }
+      }
+    ]
   }
 }
